@@ -27,5 +27,3 @@ Avoid using "any" type; always strive for strict typing.
 When adding new dependencies, update package.json and run `npm install` or `yarn install`.
 
 Write meaningful commit messages following the Conventional Commits specification.
-
-always provide comments for hard-to-explain codes. skip easy code explaining.
