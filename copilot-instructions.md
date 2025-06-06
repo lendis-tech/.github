@@ -1,6 +1,6 @@
 ## typescript coding style guide
 
-Use absolute addressing instead of relative.use this '@domain/inventory/types' instead of '../../../types' you can find it inside package.json file.
+Use absolute addressing instead of relative except for enums. Like this '@domain/inventory/types' instead of '../../../types' you can find it inside package.json file.
 
 use .prettierrc formatter as source of formatting.
 
@@ -16,7 +16,7 @@ always provide comments for hard-to-explain codes. skip easy code explaining.
 
 Prefer async/await over promise chains for asynchronous code.
 
-Use interfaces instead of types for object shapes unless a union or intersection is required.
+Use Types instead of Interfaces for object shapes.
 
 Name variables and functions descriptively; avoid single-letter names
 
@@ -27,3 +27,5 @@ Avoid using "any" type; always strive for strict typing.
 When adding new dependencies, update package.json and run `npm install` or `yarn install`.
 
 Write meaningful commit messages following the Conventional Commits specification.
+
+Do not delete package.json, package-lock.json or yarn.lock files; they are essential for dependency management.
