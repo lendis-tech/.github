@@ -18,6 +18,8 @@ Prefer async/await over promise chains for asynchronous code.
 
 Use Types instead of Interfaces for object shapes.
 
+Use enums instead of union types for static value definitions. 
+
 Name variables and functions descriptively; avoid single-letter names
 
 Keep functions small and focused—prefer single responsibility.
