@@ -10,13 +10,17 @@ Always assign type for the functions.
 
 If possible for util functions use lodash library or /lendis-tech/shared-library repo.
 
-Use google style https://google.github.io/styleguide/tsguide.html
+Use Google's TypeScript style guide conventions. https://google.github.io/styleguide/tsguide.html
 
-If possible create Jest test file along side of your change.
+If possible create Jest tests along side of your change, if there are any existing test files for the place you changed, add your tests to those files of appropriate type (integration, unit).
 
 For existing models create centralized mock functions alongside the model file with the suffix ".mock.ts". 
 
-Always provide comments for hard-to-explain codes. skip easy code explaining.
+Only comment when the intent of the code is not clear/understandable upon reading the code. Do not explain easy-to-understand code.
+
+Do not comment the steps you have taken to the codebase.
+
+Do not comment what was asked from you to the codebase.
 
 Prefer async/await over promise chains for asynchronous code.
 
@@ -37,3 +41,7 @@ Write meaningful commit messages following the Conventional Commits specificatio
 Do not delete package.json, package-lock.json or yarn.lock files; they are essential for dependency management.
 
 Before each commit execute "npm run tsc" & "npm run lint" and fix issues when reported.
+
+When testing, try not to mock incoming library methods/classes. Only mock if they play a pivotal role in the logic you are trying to test and the actual methods/classes are not usable in tests.
+
+Before creating new files, check if related code already exists and extend it when appropriate.
