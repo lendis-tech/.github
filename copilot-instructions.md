@@ -44,4 +44,4 @@ Before each commit execute "npm run tsc" & "npm run lint" and fix issues when re
 
 When testing, try not to mock incoming library methods/classes. Only mock if they play a pivotal role in the logic you are trying to test and the actual methods/classes are not usable in tests.
 
-Try to find the related code before creating new files.
+Before creating new files, check if related code already exists and extend it when appropriate.
